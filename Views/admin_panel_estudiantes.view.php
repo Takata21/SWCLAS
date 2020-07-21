@@ -76,64 +76,6 @@
                         <div class="loader" id="loader"></div>
                     </main>
                 </div>
-                <!-- <div class="admin__contenido-informacion-table">
-                    <div class="admin__contenido-informacion-table-head">
-                        <h1>Usuarios</h1>
-                    </div>
-                    <table>
-                        <tbody>
-                            <tr>
-
-                                <th>Usuario</th>
-                                <th>Tipo</th>
-                                <th>Imagen</th>
-                                <th class="edit"><a href=""> <i class=" far fa-edit"></i></a></th>
-                                <th class="delete"><a href=""> <i class=" far fa-trash-alt"></i></a></th>
-                            </tr>
-
-                            <tr>
-                                <td>admin</td>
-                                <td>Administrador</td>
-                                <td>Admin.jpg</td>
-                                <td>
-                                    <form action="#" method="POST">
-                                        <input style="display: none;" type="text" value="admin">
-                                        <button class="btnedit" value="form_update" type="submit"></button>
-                                    </form>
-                                </td>
-                                <td>
-                                    <form action="#" method="POST">
-                                        <input style="display:none;" type="text" name="id" value="admin">
-                                        <input style="display:none;" type="text" name="userimage" value="user.png">
-                                        <button class="btndelete" name="btn" value="form_delete" type="submit"></button>
-                                    </form>
-                                </td>
-
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                <div class="admin__contenido-informacion-opciones">
-                    <div class="admin__contenido-informacion-opciones-container">
-                        <form action="#" method="POST">
-                            <button class="btn icon " name="btn" value="form_add" type="submit"><i class="fas fa-plus-circle"></i></button>
-                        </form>
-                        <form action="#" method="POST">
-                            <button class="btn disabled icon icon-coding" name="btn" value="form_coding" type="submit" disabled=""><i class="fas fa-code"></i></button>
-                        </form>
-                        <form action="#" method="POST">
-                            <button class="btn disabled icon icon-printer" name="btn" value="form_printer" type="submit" disabled=""><i class="fas fa-print"></i></button>
-                        </form>
-                        <form action="/">
-                            <button class="btnexit icon icon-exit" type="submit"><i class="fas fa-sing-out-alt"></i></button>
-                        </form>
-
-                    </div>
-
-
-                </div> -->
-
             </div>
 
         </div>
