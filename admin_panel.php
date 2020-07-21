@@ -1,4 +1,4 @@
 <?php
-echo 'estoy en el admin panel';
 
+require_once 'Views/admin_panel.view.php';
 ?>

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #E9ECF4; }
+
+.far {
+  color: white; }
+
+.admin {
+  margin: 0;
+  padding: 0; }
+  .admin__container {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin: 25px 10px; }
+  .admin__menu {
+    background-color: #6faf9f;
+    height: 100vh;
+    width: 300px;
+    color: white;
+    font-weight: bold; }
+    .admin__menu-opciones {
+      border-bottom: 2px solid #498878;
+      padding-left: 30px;
+      text-align: left; }
+      .admin__menu-opciones-item {
+        margin: 20px;
+        color: white;
+        font-weight: bold; }
+        .admin__menu-opciones-item:hover {
+          color: rgba(255, 255, 255, 0.7);
+          cursor: pointer; }
+    .admin__menu a {
+      text-decoration: none;
+      display: block; }
+    .admin__menu_user {
+      padding: 25px;
+      text-align: center;
+      font-size: 1.5em;
+      border-bottom: 2px solid #498878; }
+      .admin__menu_user img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100px;
+        background: #E9ECF4; }
+  .admin__contenido {
+    height: 100vh;
+    width: 971px; }
+    .admin__contenido-header {
+      margin-bottom: 25px;
+      height: 50px;
+      background: white;
+      padding: 0 20px;
+      display: flex;
+      gap: 50px;
+      justify-content: space-between; }
+      .admin__contenido-header-fecha {
+        padding: 14px 0;
+        height: 100%;
+        width: 60%;
+        border-right: 5px solid #E9ECF4; }
+      .admin__contenido-header-out {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .admin__contenido-header-out a {
+          text-decoration: none;
+          color: black; }
+          .admin__contenido-header-out a:hover {
+            color: #498878;
+            cursor: pointer; }
+
+/*# sourceMappingURL=admin_panel.css.map */
