@@ -46,7 +46,7 @@
             <div class="admin__contenido-informacion">
                 <div class="contenedor">
                     <header>
-                        <h1>Usuarios</h1>
+                        <h1>Estudiantes</h1>
                         <div>
                             <button id="btn_cargar_usuarios" class="btn active">Cargar Usuarios</button>
                         </div>
@@ -54,11 +54,18 @@
                     <main>
                         <form action="" method="" id="formulario" class="formulario">
                             <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                            <input type="text" name="apellido" id="nombre" placeholder="Apellido">
-                            <input type="text" name="usuario" id="edad" placeholder="Nombre Uusuario">
-                            <input type="text" name="permisos" id="pais" placeholder="Permisos">
+                            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                            <input type="text" name="usuario" id="usuario" placeholder="Nombre Usuario">
                             <input type="email" name="correo" id="correo" placeholder="Correo">
+                            <!-- <input type="text" name="permisos" id="permisos" placeholder="Estudiante" disabled> -->
+                            <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+
                             <button type="submit" class="btn">Agregar</button>
+                        </form>
+
+                        <form action="" method="" id="formulario2" class="formulario">
+                            <input type="text" name="id" id="id" placeholder="ID">
+                            <button type="submit" class="btn delete">Eliminar usuario</button>
                         </form>
                         <div class="error_box" id="error_box">
                             <p>Se ha producido un error.</p>
@@ -69,8 +76,10 @@
                                 <th>Nombre</th>
                                 <th>Apellido</th>
                                 <th>Usuario</th>
-                                <th>permisos</th>
                                 <th>Correo</th>
+                                <th>telefono</th>
+                                <th>fecha ultima clase</th>
+                                <th>ultima clase</th>
                             </tr>
                         </table>
                         <div class="loader" id="loader"></div>
@@ -82,7 +91,7 @@
 
     </div>
 
-
+<script src="Controller/js/main.js"></script>
 </body>
 
 </html>
