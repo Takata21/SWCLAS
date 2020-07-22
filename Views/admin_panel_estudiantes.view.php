@@ -91,7 +91,7 @@
 
     </div>
 
-<script src="Controller/js/main.js"></script>
+<script src="Controller/js/student.js"></script>
 </body>
 
 </html>
