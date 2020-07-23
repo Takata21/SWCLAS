@@ -20,9 +20,9 @@
 
         <div class="admin__menu-opciones">
             <a class="admin__menu-opciones-item" href="admin_panel_usuarios.php">Usuarios</a>
-            <a class="admin__menu-opciones-item" href="admin_panel_estudinates.php">Estudiantes</a>
+            <a class="admin__menu-opciones-item" href="admin_panel_estudiantes.php">Estudiantes</a>
             <a class="admin__menu-opciones-item" href="admin_panel_profesores">Profesores</a>
-            <a class="admin__menu-opciones-item" href="admin_panel_materias.php">Materias</a>
+            <a class="admin__menu-opciones-item" href="admin_panel_materias.php">Clases</a>
             <a class="admin__menu-opciones-item" href="admin_panel_informes.php">informes</a>
             
         </div>

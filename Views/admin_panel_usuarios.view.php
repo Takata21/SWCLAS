@@ -22,11 +22,11 @@
             </div>
 
             <div class="admin__menu-opciones">
-                <a class="admin__menu-opciones-item " href="">Usuarios</a>
-                <a class="admin__menu-opciones-item " href="">Estudiantes</a>
-                <a class="admin__menu-opciones-item " href="">Profesores</a>
-                <a class="admin__menu-opciones-item " href="">Materias</a>
-                <a class="admin__menu-opciones-item " href="">informes</a>
+            <a class="admin__menu-opciones-item" href="admin_panel_usuarios.php">Usuarios</a>
+            <a class="admin__menu-opciones-item" href="admin_panel_estudiantes.php">Estudiantes</a>
+            <a class="admin__menu-opciones-item" href="admin_panel_profesores">Profesores</a>
+            <a class="admin__menu-opciones-item" href="admin_panel_materias.php">Clases</a>
+            <a class="admin__menu-opciones-item" href="admin_panel_informes.php">informes</a>
 
             </div>
         </div>

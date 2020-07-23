@@ -1,0 +1,35 @@
+<?php
+error_reporting(0);
+header('Content-type: application/json; charste=utf-8');
+require_once("../../Model/conexion.php");
+
+if (!$conexion->errorCode()) {
+    $respuesta=[
+        'error'=>true
+    ];
+}else{
+    $statement=$conexion->prepare('SELECT * FROM `swclas_class` ');
+    $statement->execute();
+    $respuesta = [];
+
+    while($fila = $statement->fetch(PDO::FETCH_ASSOC)){
+        $usuario = [
+            'id' => $fila['ID'],
+            'materia' => $fila['materia'],
+            'estudiante' => $fila['estudiante'],
+            'profesor' => $fila['profesor'],
+            'fecha' => $fila['fecha'],
+            'tiempo' => $fila['tiempo'],
+            'costo' => $fila['costo']
+            
+        ]; 
+        array_push($respuesta, $usuario);
+
+    }
+
+}
+
+echo json_encode($respuesta);
+
+
+?>
