@@ -8,7 +8,7 @@ require_once("config.php");
             
 
         } catch (PDOException $e) {
-            echo 'Fallo en la conexion'.$e->getMessage();
+            echo 'Fallo en la conexion'.$e->getMessage().$e->getLine();
             $respuesta=[
                 'error'=>true
             ];

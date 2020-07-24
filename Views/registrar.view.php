@@ -27,6 +27,9 @@
 				<i class="icono izquierda fas fa-envelope"></i><input class="usuario" type="text" name="email" placeholder="Email">
 			</div>
 			<div class="form-group">
+				<i class="icono izquierda fas fa-phone"></i><input class="usuario" type="text" name="telefono" placeholder="Telefono">
+			</div>
+			<div class="form-group">
 				<i class="icono izquierda fa fa-user"></i><input class="usuario" type="text" name="usuario" placeholder="Nombre de Usuario">
 			</div>
 

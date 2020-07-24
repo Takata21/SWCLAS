@@ -63,7 +63,9 @@ if(validarDatos($nombre,$apellido,$usuario,$email)){
 
 }
 
-
+$respuesta=[
+    'Prueba'=>'Hola'
+];
 echo json_encode($respuesta);
 
 

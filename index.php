@@ -2,9 +2,9 @@
 
 session_start();
 if(isset($_SESSION['usuario'])){
-    header('Location: contenido.php');
+    header('Location: student_home.php');
     die();
 }else{
-    header('Location: registrate.php');
+    header('Location: login.php');
 }
 ?>

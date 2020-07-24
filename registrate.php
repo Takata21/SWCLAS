@@ -15,21 +15,21 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
     $apellido = filter_var(strtolower($_POST['apellido']),FILTER_SANITIZE_STRING);
     $email = filter_var(strtolower($_POST['email']),FILTER_SANITIZE_EMAIL);
     $usuario = filter_var(strtolower($_POST['usuario']),FILTER_SANITIZE_STRING);
+    $telefono = filter_var(strtolower($_POST['telefono']),FILTER_SANITIZE_STRING);
     $password = $_POST['password'];
     $password2 = $_POST['password2'];
-    $tipo1=1;
     
 
     $errores = '';
 
 
-    if(empty($usuario) or empty($apellido) or empty($email) or empty($usuario) or empty($password) or empty($password2)){
+    if(empty($nombre) or empty($apellido) or empty($email) or empty($usuario) or empty($password) or empty($password2) or empty($telefono)){
         $errores = '<li> Por favor rellena todos los datos corrctamentes</li>';
         echo 'hola2';
 
     }else{
         echo 'hola3';
-        $statement = $conexion->prepare('SELECT * FROM `swclas_user` WHERE usuario = :usuario LIMIT 1');
+        $statement = $conexion->prepare('SELECT * FROM `swclas_student` WHERE usuario = :usuario LIMIT 1');
         $statement->execute(array(':usuario'=> $usuario));
         $resultado = $statement->fetch();
 
@@ -57,15 +57,18 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
 
     if ($errores == '') {
         echo 'hola5';
-        $statement = $conexion->prepare('INSERT INTO `swclas_user`( ID, nombre, apellido, usuario, email, pass, tipo) VALUES (null, :nombre, :apellido, :usuario, :email, :pass, :tipo)');
+
+
+        
+        $statement = $conexion->prepare('INSERT INTO `swclas_student`( ID, nombre, apellido, usuario, pass, correo, telefono, ultimaclase,ultimaclasem) VALUES (null, :nombre, :apellido, :usuario, :pass, :correo, :telefono, null, null )');
         echo 'hola6';
         $statement->execute(array(
             ':nombre' => $nombre,
             ':apellido' => $apellido,
             ':usuario' => $usuario,
-            ':email' => $email,
             ':pass' => $password,
-            ':tipo'=> $tipo1
+            ':correo' => $email,
+            ':telefono'=> $telefono
 
             
         ));

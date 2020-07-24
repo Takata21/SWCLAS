@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+:root {
+  --SoftBlue: hsl(231, 69%, 60%);
+  --SoftRed: hsl(0, 94%, 66%);
+  --GrayishBlue: hsl(229, 8%, 60%);
+  --VeryDarkBlue: hsl(229, 31%, 21%);
+  --lightgray:#f5f5f5; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background: #EEEEE7; }
+
+.panelclases {
+  display: none; }
+  .panelclases.active {
+    display: block; }
+
+.panelclasespagas {
+  display: none; }
+  .panelclasespagas.active {
+    display: block; }
+
+.horarios {
+  display: none; }
+  .horarios.active {
+    display: block; }
+
+.menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  background: rgba(47, 53, 79, 0.8);
+  left: 0;
+  right: 0;
+  height: 100vh;
+  transform: translateY(-50px);
+  transition: 0.3s transform, 0.3s opacity;
+  will-change: transform; }
+  .menu ul {
+    padding: 0;
+    list-style: none; }
+  .menu li {
+    border-top: 1px solid var(--GrayishBlue); }
+    .menu li:last-child a {
+      border: 2px solid var(--GrayishBlue);
+      border-radius: 5px;
+      margin-top: 1em;
+      padding: 0.7em; }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    letter-spacing: 2px; }
+    .menu a:hover {
+      color: white; }
+  .menu-open {
+    user-select: none;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    cursor: pointer;
+    background: url(../images/icon-hamburger.svg) no-repeat center; }
+  .menu-checkbok {
+    display: none; }
+    .menu-checkbok:checked ~ .header {
+      background: rgba(47, 53, 79, 0.8); }
+      .menu-checkbok:checked ~ .header .menu-open {
+        background-image: url(../images/icon-close.svg); }
+      .menu-checkbok:checked ~ .header .header-logo {
+        background-image: url(../images/logo-bookmark-white.svg); }
+      .menu-checkbok:checked ~ .header .menu {
+        transform: translateY(0px);
+        visibility: visible;
+        opacity: 1; }
+  @media screen and (min-width: 1024px) {
+    .menu {
+      transform: translateY(0px);
+      visibility: visible;
+      opacity: 1;
+      position: initial;
+      height: auto;
+      background: initial; }
+      .menu a {
+        color: var(--VeryDarkBlue); }
+      .menu ul {
+        display: flex; }
+      .menu li {
+        border: none; }
+        .menu li:last-child a {
+          border: none;
+          border-radius: 0.5em;
+          margin-top: 0;
+          padding: 0.7em 2em;
+          background: var(--SoftRed);
+          color: white;
+          margin-left: 2em; }
+      .menu-open {
+        display: none; } }
+
+.header {
+  background: #4A7B6F;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s background;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header-logo {
+    display: inline-flex;
+    width: 150px;
+    height: 70px;
+    background: url(../images/swclas-logo2.png) no-repeat center;
+    background-size: contain; }
+
+.u-wrapper {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 1em; }
+
+.download {
+  padding: 3em 0;
+  text-align: center; }
+  .download .u-wrapper > .u-parrafo {
+    margin-bottom: 3em;
+    max-width: 500px;
+    margin: auto; }
+  .download-grid {
+    margin-top: 3em;
+    display: none;
+    grid-row-gap: 2em;
+    margin: 10em 1em;
+    text-align: center; }
+    .download-grid.active {
+      display: grid; }
+  .download-item {
+    background: #ffffff4f;
+    border-radius: 1em;
+    padding: 1.5em;
+    padding-top: 2.5em;
+    background: url(../images/bg-dots.svg) repeat-x center bottom 100px;
+    box-shadow: 0 10px 11px -5px rgba(83, 104, 223, 0.3); }
+    .download-item .u-parrafo {
+      margin-bottom: 4em;
+      margin-top: 0.5em; }
+    .download-item .u-h3 {
+      margin-bottton: 0.5rem;
+      margin-top: 2em; }
+  @media screen and (min-width: 1024px) {
+    .download {
+      margin-bottom: 10em; }
+      .download-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2em; } }
+
+.u-h1, .u-h2, -u-h4 {
+  font-size: 2em;
+  font-weight: 500; }
+
+.u-h2 {
+  font-size: 1.5em; }
+
+-u-h4 {
+  font-size: 1.3em;
+  margin-top: 0.5em; }
+
+.u-parrafo {
+  color: var(--GrayishBlue);
+  line-height: 1.8;
+  font-size: 0.9em; }
+
+.u-buttom {
+  background: var(--SoftBlue);
+  border: none;
+  padding: 1em 1.5em;
+  font-size: 1;
+  color: #ffffff;
+  border-radius: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 0.5em;
+  box-shadow: 0 5px 10px -5px var(--SoftBlue); }
+  .u-buttom:hover {
+    background: #5b73ff; }
+  .u-buttom:first-of-type {
+    margin: 0; }
+  .u-buttom.is-gray {
+    color: var(--VeryDarkBlue);
+    font-weight: 500;
+    background: #f7f7f7; }
+  .u-buttom.is-red {
+    background: var(--SoftRed);
+    color: #fff; }
+    .u-buttom.is-red:hover {
+      background: #fa5757; }
+  .u-buttom.fullWith {
+    width: 100%; }
+    .u-buttom.fullWith:hover {
+      background: #5b73ff; }
+
+/*# sourceMappingURL=student.css.map */

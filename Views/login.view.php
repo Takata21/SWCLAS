@@ -19,7 +19,6 @@
 			<div class="form-group">
 				<i class="icono izquierda fa fa-user"></i><input class="usuario" type="text" name="usuario" placeholder="Usuario">
 			</div>
-
 			<div class="form-group">
 				<i class="icono izquierda fa fa-lock"></i><input class="password_btn" type="password" name="password" placeholder="Password">
 				<i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>

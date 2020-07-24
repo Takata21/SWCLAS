@@ -9,13 +9,13 @@
 body {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    background: #1B1D35;
-    color: #fff;
+    background: #CCDDDD;
+    color: #000;
 }
 
 a {
     text-decoration: none;
-    color: #B8711B;
+    color: #4A7B6F;
 }
 
 a:hover {
@@ -30,7 +30,7 @@ a:hover {
 
 .titulo {
     font-weight: 300;
-    color: #B8711B;
+    color: #4A7B6F;
     text-align: center;
     margin: 60px 0 30px 0;
 }
@@ -38,15 +38,16 @@ a:hover {
 .border {
     border: none;
     margin-bottom: 5px;
-    border-top: 10px solid #B8711B;
+    border-top: 10px solid #4A7B6F;
     background: none;
     color: none;
 }
 
 .formulario {
-    background: #2C2C47;
+    background: #EEEEE7;
     padding: 30px;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .formulario .form-group {
@@ -55,7 +56,8 @@ a:hover {
 }
 
 .formulario input[type="text"],
-.formulario input[type="password"] {
+.formulario input[type="password"],
+.formulario select {
     padding: 15px;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -65,15 +67,19 @@ a:hover {
     border-radius: 10px;
 }
 
+.formulario select {
+    width: 88%;
+}
+
 .formulario .icono {
     padding: 15px;
     text-align: center;
     width: 48px;
     max-height: 48px font-size: 18px;
     line-height: 18px;
-    background: #c8c8c8;
+    background: #CCDDDD;
     display: inline-block;
-    color: #6b6b6b;
+    color: #4A7B6F;
     vertical-align: top;
 }
 
@@ -114,10 +120,10 @@ a:hover {
     width: 48px;
     max-height: 48px font-size: 18px;
     line-height: 18px;
-    background: #679863;
+    background: #4A7B6F;
     display: inline-block;
     color: #fff;
-    background: #769766;
+    background: #4A7B6F;
     cursor: pointer;
     -webkit-border-radius: 0 3px 3px 0;
     -moz-border-radius: 0 3px 3px 0;
